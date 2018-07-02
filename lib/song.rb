@@ -33,6 +33,7 @@ class Song
         genres[i] += 1
       else
         genres[i] = 1
+      end
     end
   end
   
