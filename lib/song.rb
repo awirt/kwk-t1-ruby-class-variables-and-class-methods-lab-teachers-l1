@@ -29,10 +29,10 @@ class Song
   def self.genre_count
     genre_count = {}
     @@genres.each do |i|
-      if @@genres[i].is_a? Integer
-        @@genres[i] += 1
+      if genre_count[i].is_a? Integer
+        genre_count[i] += 1
       else
-        @@genres[i] = 1
+        genre_count[i] = 1
       end
     end
   end
